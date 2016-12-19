@@ -1,0 +1,21 @@
+<div id="dashboard">
+
+    <div layout="row">
+
+    <md-card ng-repeat="d in departments" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{d.name}}</span>
+                <span class="md-subhead">Test</span>
+            </md-card-title-text>
+            <md-card-title-media>
+                <div class="md-media-lg card-media"></div>
+            </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button href="#/{{d.name}}">Toon afdeling</md-button>
+        </md-card-actions>
+    </md-card>
+
+        </div>
+</div>

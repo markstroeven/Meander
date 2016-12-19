@@ -1,0 +1,21 @@
+<div id="depDetails">
+
+    <div layout="row">
+        <md-button ng-click="showdialogsubdepartment($event)">Voeg afdeling toe</md-button>
+    <md-card ng-repeat="subdepartment in department.subdepartment" md-theme="{{ showDarkTheme ? 'dark-grey' : 'default' }}" md-theme-watch>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{subdepartment.name}}</span>
+                <span class="md-subhead">Test</span>
+            </md-card-title-text>
+            <md-card-title-media>
+                <div class="md-media-lg card-media"></div>
+            </md-card-title-media>
+        </md-card-title>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button>Toon sub afdeling</md-button>
+        </md-card-actions>
+    </md-card>
+
+        </div>
+</div>
